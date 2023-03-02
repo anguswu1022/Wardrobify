@@ -2,15 +2,15 @@
 
 Team:
 
-* Person 1 - Which microservice?
-* Person 2 - Which microservice?
+- Angus Wu - Shoes microservice
+- Peter Trinh - Hats microservice
 
 ## Design
 
 ## Shoes microservice
 
-Explain your models and integration with the wardrobe
-microservice, here.
+Using data pulled from the wardrobe microservice and use it to make the
+show microservice.
 
 ## Hats microservice
 
