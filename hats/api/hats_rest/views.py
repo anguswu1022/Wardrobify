@@ -17,6 +17,14 @@ class HatListEncoder(ModelEncoder):
         "location",
     ]
 
+class LocationVODetailEncoder(ModelEncoder):
+    model = LocationVO
+    properties = [
+        "import_href",
+        "closet_name",
+        "section_number",
+        "shelf_number",
+    ]
 class HatDetailEncoder(ModelEncoder):
     model = Hat
     properties = [
@@ -27,16 +35,10 @@ class HatDetailEncoder(ModelEncoder):
         "picture_url",
         "location",
     ]
-
-class LocationVODetailEncoder(ModelEncoder):
-    model = LocationVO
-    properties = [
-        "import_href",
-        "closet_name",
-        "section_number",
-        "shelf_number",
-    ]
-
+    #
+    encoders = {
+        "location": LocationVODetailEncoder()
+    }
 
 
 @require_http_methods(["GET", "POST"])
@@ -64,6 +66,6 @@ def api_list_hat(request, location_vo_id=None):
         hat = Hat.objects.create(**content)
         return JsonResponse(
             hat,
-            encorder=HatDetailEncoder,
+            encoder=HatDetailEncoder,
             safe=False,
         )
