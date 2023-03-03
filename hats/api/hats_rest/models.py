@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.urls import reverse
 # Create your models here.
 class LocationVO(models.Model):
     import_href = models.CharField(max_length=200, unique=True)
@@ -19,3 +19,5 @@ class Hat(models.Model):
         related_name="location",
         on_delete=models.CASCADE,
     )
+    def get_api_url(self):
+        return reverse("api_show_hat", kwargs={"id": self.id})
