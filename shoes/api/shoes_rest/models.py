@@ -1,8 +1,8 @@
 from django.db import models
 from django.urls import reverse
 
-
 # Create your models here.
+<<<<<<< HEAD
 class BinVO(models.Model):
     import_href = models.CharField(max_length=200, unique=True)
     closet_name = models.CharField(max_length=100)
@@ -29,3 +29,5 @@ class Shoe(models.Model):
 
     class Meta:
         ordering = ("manufacturer", "model_name", "color")
+=======
+>>>>>>> e640c25c7126a2a307664e62423730945f5cc517
