@@ -8,6 +8,9 @@ class BinVO(models.Model):
     bin_number = models.PositiveSmallIntegerField()
     bin_size = models.PositiveSmallIntegerField()
 
+    def __str__(self):
+        return f"{self.closet_name} - {self.bin_number}/{self.bin_size}"
+
     class Meta:
         ordering = ("closet_name", "bin_number", "bin_size")
 
