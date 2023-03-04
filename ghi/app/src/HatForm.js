@@ -128,6 +128,7 @@ function HatForm() {
                                 })}
                             </select>
                         </div>
+                        <button className="btn btn -primary">Create</button>
                     </form>
                 </div>
             </div>

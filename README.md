@@ -9,13 +9,9 @@ Team:
 
 ## Shoes microservice
 
-Using data pulled from the wardrobe microservice and use it to make the
-show microservice.
+In this fullstack application, I created the front-end with the use of React and the back-end with Django. The Poll application in the shoes microservices gets the Bin data from the wardrobe API and creates/updates a BinVO object in the user's wardrobe. Within the same microservice, the shoes_rest app enables users to create, view, and delete shoe objects within the BinVO. I rendered a interactive single page app with React that allowed users to view, create, and delete the shoe objects using various components.
 
 ## Hats microservice
 
-Explain your models and integration with the wardrobe
-microservice, here.
 
- By using the data from wardrobe, we were able to create a backend and frontend of a
- website. By taking that information, we were able to create a backend that list, create, and deletes hats. And from that backend, we're able to set it up for our user to see.
+By pulling the data from wardrobe, we were able to create a frontend and backend of a website. Setting up the backend data in order to create a hat and putting it into a list to let our user see it in the frontend.
