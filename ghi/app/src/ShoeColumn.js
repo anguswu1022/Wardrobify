@@ -13,7 +13,7 @@ export default function ShoeColumn(props) {
               <h6 className="card-subtitle mb-2 text-muted">
                 {shoe.model_name}
               </h6>
-              <p className="card-text">{shoe.color}</p>
+              <p className="card-text">Color: {shoe.color}</p>
               <div>
                 <DeleteShoe href={shoe.href} />
               </div>
