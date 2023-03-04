@@ -14,6 +14,5 @@ show microservice.
 
 ## Hats microservice
 
-Explain your models and integration with the wardrobe
-microservice, here.
-Using wardrobe microservice database to integrate hats microservice.
+
+By pulling the data from wardrobe, we were able to create a frontend and backend of a website. Setting up the backend data in order to create a hat and putting it into a list to let our user see it in the frontend.

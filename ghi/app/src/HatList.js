@@ -26,7 +26,7 @@ function HatColumns(props) {
                             </p>
                         </div>
                         <div className="card-text">
-                            {`${hat.location.closet_name} ${hat.location.shelf_name}
+                            {`${hat.location.closet_name} ${hat.location.section_number}
                             ${hat.location.shelf_number}`}
 
                         </div>
